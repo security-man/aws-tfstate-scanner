@@ -37,7 +37,7 @@ Next, simply clone the repository and execute the python script through a termin
 
 To run a scan, execute the script through a terminal session:
 
-        $ python3 aws-tfstate-scanner.py
+        python3 aws-tfstate-scanner.py
 
 There are two options provided for scanning:
 
@@ -45,17 +45,17 @@ There are two options provided for scanning:
 
 For this option simply provide a comma-separated list of AWS profiles to scan. Profiles should correspond with the listed profile names within your .aws/.config file. E.g., for a scan against 3 profiles named **PROFILE1**,**PROFILE2**,**PROFILE3**:
 
-        $ python3 aws-tfstate-scanner.py
-        $ Choose input type: 1 = comma-separated list of profiles, 2 = path to aws .config file: 1
-        $ Specify AWS Profile List: PROFILE1,PROFILE2,PROFILE3
+        python3 aws-tfstate-scanner.py
+        Choose input type: 1 = comma-separated list of profiles, 2 = path to aws .config file: 1
+        Specify AWS Profile List: PROFILE1,PROFILE2,PROFILE3
 
 ### Option 2 (path to aws .config file)
 
 For this option simply provide a path to your .aws/.config file. **NOTE**: This will scan against **ALL** of the AWS profiles listed within your .aws/.config file. Depending on the number of buckets/objects in each AWS Account represented by a profile, this could take several seconds/minutes per account.
 
-        $ python3 aws-tfstate-scanner.py
-        $ Choose input type: 1 = comma-separated list of profiles, 2 = path to aws .config file: 2
-        $ Specify .aws config file path: /path/to/.aws/.config
+        python3 aws-tfstate-scanner.py
+        Choose input type: 1 = comma-separated list of profiles, 2 = path to aws .config file: 2
+        Specify .aws config file path: /path/to/.aws/.config
 
 ## Output
 
